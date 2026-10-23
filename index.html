@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carmen y Nacho · 27 de febrero de 2027</title>
+<meta name="description" content="Carmen y Nacho se casan el 27 de febrero de 2027 en Puentedeume. Agenda, transporte, alojamiento y confirmación de asistencia.">
+<meta property="og:title" content="Carmen y Nacho · 27 de febrero de 2027">
+<meta property="og:description" content="Nos casamos el 27 de febrero de 2027 en Puentedeume. Aquí tenéis toda la información y el formulario para confirmar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ignaciofuertesj.github.io/boda/">
+<meta property="og:image" content="https://ignaciofuertesj.github.io/boda/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBFAF8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --cream:#FBFAF8; --ink:#000000; --azul:#14325B; --granite:#000000;
+  --line:#E3DED6; --sand:#F3F0EA;
+  --serif:"Cormorant Garamond",Garamond,Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--cream);color:var(--ink);
+  font-family:var(--serif);font-size:20px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--ink);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--azul);outline-offset:3px;border-radius:2px}
+.wrap{max-width:600px;margin:0 auto;padding:0 26px}
+
+/* ---------- menú ---------- */
+nav{position:sticky;top:0;z-index:20;background:rgba(251,250,248,.94);
+  backdrop-filter:blur(8px)}
+.nav-in{max-width:600px;margin:0 auto;display:flex;justify-content:center;
+  flex-wrap:nowrap;overflow-x:auto;padding:0 6px;scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+nav button{flex:0 0 auto;background:none;border:0;cursor:pointer;
+  font-family:var(--sans);font-size:clamp(9.5px,2.35vw,12px);font-weight:500;
+  letter-spacing:.06em;white-space:nowrap;
+  text-transform:uppercase;color:var(--ink);padding:14px clamp(5px,1.5vw,10px);
+  border-bottom:2px solid transparent;transition:color .15s ease}
+nav button:hover{color:var(--ink)}
+nav button[aria-current="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+
+/* ---------- páginas ---------- */
+.page{display:none;padding:38px 0 90px}
+.page.on{display:block}
+@media (prefers-reduced-motion:no-preference){
+  .page.on{animation:fade .45s ease both}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+}
+
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,8vw,40px);
+  letter-spacing:.01em;margin:0;line-height:1.2;text-align:center}
+h2{font-family:var(--sans);font-size:12.5px;font-weight:500;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--ink);margin:0 0 6px}
+h3{font-family:var(--sans);font-weight:500;font-size:12.5px;letter-spacing:.14em;
+  text-transform:uppercase;margin:0 0 8px;line-height:1.4}
+p{margin:0 0 15px}
+p:last-child{margin-bottom:0}
+.intro{font-size:21px;line-height:1.5;margin:0 0 26px}
+
+/* ---------- portada ---------- */
+.hero{text-align:center;padding:40px 26px 60px}
+.foto{margin:24px 0 0}
+.foto img{width:100%;height:auto;display:block;border-radius:2px;background:var(--sand)}
+.fecha{font-weight:400;font-size:clamp(30px,8vw,40px);margin:22px 0 0;letter-spacing:.02em}
+.sitio{font-family:var(--sans);font-size:14.5px;color:var(--ink);margin:10px 0 0;
+  letter-spacing:.04em}
+
+.dia{font-family:var(--serif);font-size:26px;font-weight:400;margin:46px 0 4px}
+.dia:first-of-type{margin-top:0}
+
+.tramo{font-size:19px;margin:6px 0 0;line-height:1.5}
+.tramo span{font-family:var(--sans);font-size:14px;padding:0 4px;vertical-align:1px}
+
+/* ---------- bloques ---------- */
+.bloque{padding:16px 0 4px}
+.bloque .cuando{font-family:var(--sans);font-size:12.5px;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink);margin:0 0 8px}
+.bloque p{font-size:19px;color:var(--granite);margin:8px 0 0}
+.bloque .sitio-b{font-size:19px;color:var(--ink);margin:0}
+.mapa{font-family:var(--sans);font-size:14px;display:inline-block;margin-top:10px}
+
+.aviso{background:var(--sand);border-radius:2px;padding:18px 20px;margin:26px 0 0;
+  font-size:19px;line-height:1.5}
+
+.regalo-txt{text-align:center;font-size:20px;line-height:1.55;max-width:34ch;margin:0 auto}
+.regalo-iban{text-align:center;font-size:clamp(19px,5vw,24px);letter-spacing:.04em;
+  margin:40px auto;word-break:break-word}
+.copy,.link{font-family:var(--sans);background:none;border:1px solid var(--line);
+  border-radius:2px;color:var(--ink);font-size:14px;padding:8px 14px;cursor:pointer}
+.copy:hover{border-color:var(--granite);color:var(--ink)}
+.link{border:0;color:var(--ink);text-decoration:underline;text-underline-offset:3px;padding:0}
+
+/* ---------- formulario ---------- */
+.field{margin-bottom:20px}
+label{display:block;font-size:19px;margin-bottom:7px}
+.hint{display:block;font-family:var(--sans);font-size:13.5px;color:var(--granite);margin-top:2px}
+input[type=text],textarea{width:100%;font-family:var(--serif);font-size:19px;color:var(--ink);
+  background:#fff;border:1px solid var(--line);border-radius:2px;padding:12px 13px;line-height:1.4}
+textarea{min-height:76px;resize:vertical}
+input:focus,textarea:focus{border-color:var(--azul);outline:none;box-shadow:0 0 0 2px rgba(20,50,91,.12)}
+.choices{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.choice{min-width:0}
+.choice input{position:absolute;opacity:0;width:1px;height:1px}
+.choice span{display:block;text-align:center;padding:12px 10px;border:1px solid var(--line);
+  border-radius:2px;background:#fff;cursor:pointer;font-size:18px;transition:border-color .12s ease}
+.choice input:checked + span{border-color:var(--azul);background:rgba(20,50,91,.05);font-weight:500}
+.choice input:focus-visible + span{outline:2px solid var(--azul);outline-offset:2px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+[hidden]{display:none !important}
+.btn{width:100%;background:var(--ink);color:#fff;font-family:var(--serif);font-size:20px;
+  border:1px solid var(--ink);border-radius:2px;padding:15px 24px;cursor:pointer}
+.btn:hover{background:#333}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+.err{color:var(--ink);font-size:18px;margin:14px 0 0}
+.done{text-align:center;padding:20px 0}
+.ya{font-family:var(--sans);font-size:14px;line-height:1.5;background:var(--sand);
+  padding:12px 14px;border-radius:2px;margin:0 0 22px}
+.done h3{font-family:var(--serif);font-weight:400;font-size:26px;letter-spacing:0;
+  text-transform:none;margin:0 0 22px}
+.done p{color:var(--granite)}
+
+
+@media (min-width:700px){
+  body{font-size:21px}
+  .wrap{padding:0 40px}
+  .hero{padding:84px 40px 76px}
+  .page{padding:52px 0 130px}
+}
+</style>
+</head>
+<body>
+
+<!-- ==========================================================
+     LO EDITABLE ESTÁ AQUÍ. Nada más abajo hace falta tocarlo.
+     ========================================================== -->
+<script>
+const BODA = {
+  novia: "Carmen",
+  novio: "Nacho",
+
+  // ← Dirección de la aplicación web de Google Apps Script (la pega Claude)
+  formUrl: "https://script.google.com/macros/s/AKfycbwwdOt88OdOHQ4o4vSYwJyGU0KOQr5nD20FkeT77OZsh40o5XsEu-Xs_HFLat0XipaHeg/exec",
+  foto: "foto.jpg",
+  fecha: "2027-02-27T12:30:00+01:00",
+
+  mapaIglesia: "Iglesia de Santiago, Pontedeume, A Coruña",
+  mapaPazo:    "Pazo de San Tirso, Abegondo, A Coruña",
+  mapaPenela:  "Club Marítimo La Penela, Cabanas, A Coruña",
+
+  // ← PENDIENTE. Si lo dejas vacío (""), no se muestra el apartado del regalo.
+  iban: "ES03 0182 5322 2300 0165 1562",
+  titular: "Carmen y Nacho",
+
+  // ← PENDIENTE. Añade los restaurantes entre comillas, separados por comas.
+  //   Si la lista está vacía, el apartado no aparece.
+  restaurantes: [],
+
+  telNacho: "617 62 30 86",
+  telCarmen: "650 31 49 74",
+
+  // ← PENDIENTE. Vacío = no se menciona ninguna fecha límite.
+  cierre: ""
+};
+</script>
+
+<header class="wrap hero">
+  <h1 id="names"></h1>
+  <figure class="foto" id="foto" hidden><img id="fotoImg" alt=""></figure>
+  <p class="fecha">27.02.2027</p>
+  <p class="sitio">Puentedeume · A Coruña</p>
+</header>
+
+<nav>
+  <div class="nav-in" id="nav">
+    <button data-p="info" aria-current="true">Información</button>
+    <button data-p="alojamiento">Alojamiento</button>
+    <button data-p="confirmar">Confirmar</button>
+    <button data-p="lista">Lista de boda</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ---------------- INICIO ---------------- -->
+
+<!-- ---------------- AGENDA ---------------- -->
+<section class="page on" id="p-info">
+
+  <p class="dia">Viernes 26.02</p>
+
+  <div class="bloque">
+    <p class="cuando">Preboda · 20.00h</p>
+    <p>Habrá un picoteo informal en el Club Marítimo La Penela, en Cabañas. Si preferís cenar en Puentedeume o en Coruña, no dudéis en preguntarnos recomendaciones.</p>
+    <a class="mapa" id="mapPenela" href="#" target="_blank" rel="noopener">Ver en el mapa</a>
+  </div>
+
+  <p class="dia">Sábado 27.02</p>
+
+  <div class="bloque">
+    <p class="cuando">Ceremonia · 12.30h</p>
+    <p>La ceremonia tendrá lugar en la Iglesia de Santiago de Puentedeume.</p>
+    <a class="mapa" id="mapIglesia" href="#" target="_blank" rel="noopener">Ver en el mapa</a>
+  </div>
+
+  <div class="bloque">
+    <p class="cuando">Celebración · 14.00h</p>
+    <p>Después de la ceremonia habrá autobuses que nos lleven directamente a la celebración, en el Pazo de San Tirso.</p>
+    <a class="mapa" id="mapPazo" href="#" target="_blank" rel="noopener">Ver en el mapa</a>
+  </div>
+
+  <p class="dia">Autobuses de la boda</p>
+
+  <div class="bloque">
+    <p class="cuando">Ida</p>
+    <p class="tramo">Cabañas <span>→</span> Puentedeume</p>
+    <p class="tramo">A Coruña <span>→</span> Puentedeume</p>
+  </div>
+
+  <div class="bloque">
+    <p class="cuando">Después de la ceremonia</p>
+    <p class="tramo">Puentedeume <span>→</span> Pazo de San Tirso</p>
+  </div>
+
+  <div class="bloque">
+    <p class="cuando">Vuelta</p>
+    <p class="tramo">Pazo de San Tirso <span>→</span> Puentedeume <span>→</span> Cabañas</p>
+    <p class="tramo">Pazo de San Tirso <span>→</span> A Coruña</p>
+  </div>
+</section>
+
+<section class="page" id="p-alojamiento">
+
+  <p class="dia">Cómo venir</p>
+
+  <div class="bloque">
+    <p class="cuando">En coche</p>
+    <p>Puentedeume y Cabañas están en la AP-9, entre A Coruña y Ferrol.</p>
+  </div>
+
+  <div class="bloque">
+    <p class="cuando">En tren</p>
+    <p>La estación de referencia es A Coruña. Desde allí, taxi hasta Puentedeume o Cabañas si os alojáis en la zona.</p>
+  </div>
+
+  <div class="bloque">
+    <p class="cuando">En avión</p>
+    <p>El aeropuerto es también el de A Coruña. Desde allí podéis coger un taxi, o alquilar un coche en el propio aeropuerto si preferís moveros por vuestra cuenta.</p>
+  </div>
+
+  <p class="dia">Puentedeume y Cabañas</p>
+
+  <div class="bloque">
+    <p>Son dos pueblos vecinos, uno a cada lado del río Eume, y unidos por el puente de piedra. La preboda del viernes es en Cabañas y la ceremonia del sábado en Puentedeume. Es un trayecto de unos cinco minutos en coche, o un paseo de media hora.</p>
+  </div>
+
+  <div class="bloque">
+    <p>Puentedeume es la mejor opción si queréis estar cerca.</p>
+    <p>Hay varias posibilidades de alojamiento que podréis encontrar en Booking o Airbnb. Hemos hablado con el Hotel Eumesa y tendrá habitaciones disponibles para todos los que os queráis alojar allí.</p>
+  </div>
+
+  <p class="dia">A Coruña</p>
+
+  <div class="bloque">
+    <p>Lo recomendamos si queréis aprovechar al máximo el fin de semana. La oferta de alojamiento es más amplia, igual que la de restaurantes y planes para disfrutar el domingo. Habrá autobuses de ida y de vuelta.</p>
+  </div>
+
+  <div class="bloque" id="bloqueResta" hidden>
+    <p class="cuando">Restaurantes</p>
+    <ul id="listaResta" style="margin:8px 0 0;padding-left:20px;font-size:19px"></ul>
+  </div>
+</section>
+
+<!-- ---------------- TRANSPORTE ---------------- -->
+
+<!-- ---------------- ALOJAMIENTO ---------------- -->
+
+<!-- ---------------- ASISTENCIA ---------------- -->
+<section class="page" id="p-confirmar">
+  <h2>Confirma tu asistencia</h2>
+  <p class="intro" id="lede">Con una respuesta por invitación es suficiente. Si cambia algo, podéis volver a entrar y responder otra vez.</p>
+
+  <p class="ya" id="yaResp" hidden></p>
+
+  <form id="rsvp" novalidate>
+    <div class="hp"><label>No rellenar<input type="text" name="web" tabindex="-1" autocomplete="off"></label></div>
+
+    <div class="field">
+      <label for="nombre">Nombre y apellidos</label>
+      <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+    </div>
+
+    <div class="field">
+      <label for="direccion">Dirección postal
+        <span class="hint">Para enviarte la invitación. Calle, número, piso, código postal y ciudad.</span>
+      </label>
+      <textarea id="direccion" name="direccion" autocomplete="street-address" required></textarea>
+    </div>
+
+    <div class="field">
+      <label>¿Vendrás?</label>
+      <div class="choices">
+        <label class="choice"><input type="radio" name="asiste" value="si" checked><span>Allí estaré</span></label>
+        <label class="choice"><input type="radio" name="asiste" value="no"><span>No podré</span></label>
+      </div>
+    </div>
+
+    <div id="bloqueSi">
+      <div class="field">
+        <label>¿Vienes acompañado?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="mas1" value="no" checked><span>Voy solo</span></label>
+          <label class="choice"><input type="radio" name="mas1" value="si"><span>Con acompañante</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="acompanante">Nombre y apellidos de tu acompañante</label>
+        <input type="text" id="acompanante" name="acompanante">
+      </div>
+
+      <div class="field">
+        <label>¿Vendrás a la preboda del viernes?</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="preboda" value="si"><span>Sí</span></label>
+          <label class="choice"><input type="radio" name="preboda" value="no" checked><span>No</span></label>
+          <label class="choice"><input type="radio" name="preboda" value="duda"><span>Aún no lo sé</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Autobús de ida</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="busIda" value="No" checked><span>No hace falta</span></label>
+          <label class="choice"><input type="radio" name="busIda" value="Coruña"><span>Desde Coruña</span></label>
+          <label class="choice"><input type="radio" name="busIda" value="Cabañas"><span>Desde Cabañas</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Autobús de vuelta</label>
+        <div class="choices">
+          <label class="choice"><input type="radio" name="busVuelta" value="No" checked><span>No hace falta</span></label>
+          <label class="choice"><input type="radio" name="busVuelta" value="Coruña"><span>A Coruña</span></label>
+          <label class="choice"><input type="radio" name="busVuelta" value="Puentedeume"><span>A Puentedeume</span></label>
+          <label class="choice"><input type="radio" name="busVuelta" value="Cabañas"><span>A Cabañas</span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="alergias">Alergias o intolerancias</label>
+        <textarea id="alergias" name="alergias"></textarea>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="mensaje">Algo que quieras decirnos
+        <span class="hint">Opcional.</span>
+      </label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+    </div>
+
+    <button class="btn" type="submit" id="send">Enviar</button>
+    <p class="err" id="err"></p>
+  </form>
+
+  <div class="done" id="done" hidden>
+    <h3 id="doneTitle"></h3>
+    <p id="doneText"></p>
+    <button class="link" type="button" id="again">Cambiar mi respuesta</button>
+  </div>
+
+</section>
+
+<section class="page" id="p-lista">
+  <p class="regalo-txt">Lo más importante es compartir este día con vosotros, pero si queréis ayudarnos a comenzar esta nueva etapa, os dejamos nuestro número de cuenta.</p>
+  <p class="regalo-iban" id="ibanText"></p>
+  <p class="regalo-txt">¡Muchas gracias!</p>
+</section>
+
+
+</main>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const maps = q => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q);
+
+  $("#names").textContent = BODA.novia + " y " + BODA.novio;
+  document.title = BODA.novia + " y " + BODA.novio + " · 27 de febrero de 2027";
+
+  if (BODA.foto) {
+    const img = $("#fotoImg");
+    img.alt = BODA.novia + " y " + BODA.novio;
+    img.width = 1086; img.height = 1448;
+    img.addEventListener("load", () => { $("#foto").hidden = false; });
+    img.addEventListener("error", () => { $("#foto").hidden = true; });
+    img.src = BODA.foto;
+  }
+
+  $("#mapIglesia").href = maps(BODA.mapaIglesia);
+  $("#mapPazo").href    = maps(BODA.mapaPazo);
+  $("#mapPenela").href  = maps(BODA.mapaPenela);
+
+
+  // ---- navegación entre apartados ----
+  const botones = [...document.querySelectorAll("#nav button")];
+  function ir(p, scroll){
+    document.querySelectorAll(".page").forEach(s => s.classList.toggle("on", s.id === "p"+"-"+p));
+    botones.forEach(b => b.setAttribute("aria-current", String(b.dataset.p === p)));
+    if (scroll !== false) {
+      const nav = document.querySelector("nav");
+      const y = nav.getBoundingClientRect().top + window.scrollY;
+      if (window.scrollY > y) window.scrollTo({top:y, behavior:"instant"});
+    }
+    if (location.hash.slice(1) !== p) history.replaceState(null, "", "#" + p);
+  }
+  botones.forEach(b => b.addEventListener("click", () => ir(b.dataset.p)));
+  window.addEventListener("hashchange", () => {
+    const p = location.hash.slice(1);
+    if (botones.some(b => b.dataset.p === p)) ir(p);
+  });
+  const inicial = location.hash.slice(1);
+  if (botones.some(b => b.dataset.p === inicial)) ir(inicial, false);
+
+  // ---- regalo ----
+  if (BODA.iban) {
+    $("#ibanText").textContent = BODA.iban;
+  }
+  if (BODA.restaurantes && BODA.restaurantes.length) {
+    $("#bloqueResta").hidden = false;
+    $("#listaResta").innerHTML = BODA.restaurantes.map(r => "<li>" + r + "</li>").join("");
+  } else {
+    $("#bloqueResta").remove();   // si no, dejaría una línea separadora suelta
+  }
+  if (BODA.cierre) $("#lede").textContent += " Nos vendría muy bien tenerlo antes del " + BODA.cierre + ".";
+
+  // ---- formulario ----
+  const form = $("#rsvp"), err = $("#err"), send = $("#send");
+  form.querySelectorAll("input[name=asiste]").forEach(r =>
+    r.addEventListener("change", () => { $("#bloqueSi").hidden = form.asiste.value === "no"; }));
+
+  const fail = (t, c) => { err.textContent = t; if (c) c.focus(); };
+
+  // Si desde este móvil ya se respondió, solo avisamos. No se rellena nada:
+  // puede ser otra persona usando el mismo teléfono.
+  try {
+    const previo = localStorage.getItem("bodaNombre");
+    if (previo) {
+      $("#yaResp").hidden = false;
+      $("#yaResp").textContent = "Desde este móvil ya se respondió a nombre de " + previo + ". Si quieres cambiar esa respuesta, escribe el mismo nombre.";
+    }
+  } catch {}
+
+  form.addEventListener("submit", async ev => {
+    ev.preventDefault();
+    err.textContent = "";
+
+    const nombre = form.nombre.value.trim();
+    if (nombre.length < 3) return fail("Nos falta tu nombre.", form.nombre);
+    const direccion = form.direccion.value.trim();
+    if (direccion.length < 10) return fail("Necesitamos tu dirección completa para enviarte la invitación.", form.direccion);
+
+    const viene = form.asiste.value === "si";
+    const conAcomp = viene && form.mas1.value === "si";
+    if (conAcomp && form.acompanante.value.trim().length < 3)
+      return fail("Dinos el nombre de tu acompañante.", form.acompanante);
+
+    const datos = {
+      nombre, direccion,
+      asiste:      viene ? "Sí" : "No",
+      acompanante: conAcomp ? form.acompanante.value.trim() : "",
+      alergias:    viene ? form.alergias.value.trim() : "",
+      preboda:     viene ? ({si:"Sí", no:"No", duda:"Aún no lo sabe"})[form.preboda.value] : "",
+      busIda:      viene ? form.busIda.value : "",
+      busVuelta:   viene ? form.busVuelta.value : "",
+      mensaje:     form.mensaje.value.trim(),
+      web:         form.web.value
+    };
+
+    send.disabled = true; send.textContent = "Enviando…";
+    try {
+      const r = await fetch(BODA.formUrl, {
+        method:"POST", redirect:"follow",
+        headers:{"Content-Type":"text/plain;charset=utf-8"},
+        body: JSON.stringify(datos)
+      });
+      const res = await r.json().catch(() => ({}));
+      if (!r.ok || !res.ok) throw new Error();
+      try { localStorage.setItem("bodaNombre", nombre); } catch {}
+      form.hidden = true;
+      $("#done").hidden = false;
+      $("#doneTitle").textContent = "¡Muchas gracias!";
+      $("#doneText").textContent = "";
+      $("#done").scrollIntoView({behavior:"smooth", block:"center"});
+    } catch {
+      fail("No se ha podido enviar. Prueba otra vez en un momento.");
+    } finally {
+      send.disabled = false; send.textContent = "Enviar";
+    }
+  });
+
+  $("#again").addEventListener("click", () => {
+    $("#done").hidden = true; form.hidden = false;
+    err.textContent = ""; form.nombre.focus();
+  });
+})();
+</script>
+</body>
+</html>
